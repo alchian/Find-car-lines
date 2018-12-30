@@ -30,7 +30,9 @@ Step 2,  I smoothed the gray image with the function cv2.GaussianBlur to remove 
 
 ![solidWhiteCurve_smoothing.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_test_images_smoothing.jpg "solidWhiteCurve_smoothing.jpg")
 
-3rd, I find the edge use;
+3rd, I find the edges of the smoothed gray image using function cv2.Canny;
+
+![solidWhiteCurve_edges.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_test_images_edges.jpg "solidWhiteCurve_edges.jpg")
 
 4th, I defined an area of interest to deal with, and to cut out the interst i don't care too much.
 
