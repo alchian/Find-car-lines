@@ -10,20 +10,17 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-
-[//]: # (Image References)
-
-[image1]: ./test_images/solidWhiteCurve.jpg "Grayscale"
-
 ---
 
 ### Reflection
 
-![Alt text](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve.jpg "optional title")
+![solidWhiteCurve.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve.jpg "solidWhiteCurve.jpg")
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-1st, I converted the images to grayscale;
+I will describe my work step by step with the image given as "solidWhiteCurve.jpg":
+
+Step 1, convert the images to grayscale with the function cv2.COLOR_RGB2GRAY
 
 2ed, I smoothed the gray image;
 
