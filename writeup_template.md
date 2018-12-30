@@ -14,11 +14,13 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-![solidWhiteCurve.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve.jpg "solidWhiteCurve.jpg")
+
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 I will describe my work step by step with the image given as "solidWhiteCurve.jpg":
+
+![solidWhiteCurve.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve.jpg "solidWhiteCurve.jpg")
 
 Step 1, convert the images to grayscale with the function cv2.COLOR_RGB2GRAY
 
