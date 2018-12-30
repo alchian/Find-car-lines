@@ -13,7 +13,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./Find-car-lines/solidWhiteCurve.jpg "Grayscale"
+
 
 ---
 
