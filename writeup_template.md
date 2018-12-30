@@ -19,6 +19,8 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
+![Alt text](图片链接 "optional title")
+
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 1st, I converted the images to grayscale;
