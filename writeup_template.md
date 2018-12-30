@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-![Alt text](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve.jpg"optional title")
+![Alt text](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve.jpg "optional title")
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
