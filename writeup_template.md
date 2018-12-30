@@ -24,10 +24,15 @@ The goals / steps of this project are the following:
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 1st, I converted the images to grayscale;
+
 2ed, I smoothed the gray image;
+
 3rd, I find the edge use;
+
 4th, I defined an area of interest to deal with, and to cut out the interst i don't care too much.
+
 5th, I use cv2.HoughLinesP to find the lines in the same line
+
 6th, 
 
 
