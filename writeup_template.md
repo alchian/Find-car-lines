@@ -24,7 +24,7 @@ I will describe my work step by step with the image given as "solidWhiteCurve.jp
 
 Step 1, convert the images to grayscale with the function cv2.COLOR_RGB2GRAY
 
-![solidWhiteCurve_gray.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve.jpg "solidWhiteCurve_gray.jpg")
+![solidWhiteCurve_gray.jpg](Find-car-lines/solidWhiteCurve_test_images_grayt.jpg "solidWhiteCurve_gray.jpg")
 
 2ed, I smoothed the gray image;
 
