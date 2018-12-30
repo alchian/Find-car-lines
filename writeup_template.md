@@ -22,11 +22,13 @@ I will describe my work step by step with the image given as "solidWhiteCurve.jp
 
 ![solidWhiteCurve.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve.jpg "solidWhiteCurve.jpg")
 
-Step 1, convert the images to grayscale with the function cv2.COLOR_RGB2GRAY
+Step 1, I converted the images to grayscale with the function cv2.COLOR_RGB2GRAY;
 
 ![solidWhiteCurve_gray.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_test_images_grayt.jpg "solidWhiteCurve_gray.jpg")
 
-2ed, I smoothed the gray image;
+Step 2,  I smoothed the gray image with the function cv2.GaussianBlur to remove the noise point;
+
+![solidWhiteCurve_smoothing.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_test_images_smoothing.jpg "solidWhiteCurve_smoothing.jpg")
 
 3rd, I find the edge use;
 
