@@ -50,8 +50,9 @@ The Minimum number of pixels making up a line here is 20.&Maximum gap in pixels 
 
 ![solidWhiteCurve_line_image.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_line_image.jpg "solidWhiteCurve_line_image.jpg")
 
-6th, 
+6th, I add the line image to the intial iamge we deal with using funtion cv2.addWeight. I get the result.
 
+![solidWhiteCurve_output.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_draw%20twolines.jpg "solidWhiteCurve_output.jpg")
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
