@@ -44,7 +44,9 @@ The function used here include np.zeros_like,  cv2.fillPoly, &cv2.bitwise_and. n
 
 ![solidWhiteCurve_region_of_interest.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_region_of_interest.jpg "solidWhiteCurve_region_of_interest.jpg")
 
-5th, I use cv2.HoughLinesP to find the lines in the same line. Minimum number of pixels making up a line here is 20.&Maximum gap in pixels between connectable line segments is 60. and draw the lines we find on the image ,we get the line image.
+5th, I use cv2.HoughLinesP to find the lines in the same line. 
+
+The Minimum number of pixels making up a line here is 20.&Maximum gap in pixels between connectable line segments is 60. and draw the lines we find on the image ,we get the line image.
 
 ![solidWhiteCurve_line_image.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_line_image.jpg "solidWhiteCurve_line_image.jpg")
 
