@@ -46,6 +46,8 @@ The function used here include np.zeros_like,  cv2.fillPoly, &cv2.bitwise_and. n
 
 5th, I use cv2.HoughLinesP to find the lines in the same line
 
+![solidWhiteCurve_line_image.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_line_image.jpg "solidWhiteCurve_line_image.jpg")
+
 6th, 
 
 
