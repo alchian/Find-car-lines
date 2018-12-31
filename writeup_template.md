@@ -40,6 +40,8 @@ The region I tested ok here is dined with 4 points: [[(150,the botom of the imag
 
 "Tesd ok" means the region either not contain too much ,nor cut off the information which is useful as the information of car lines. 
 
+The function used here include np.zeros_like,  cv2.fillPoly, &cv2.bitwise_and. np.zeros_like is used here to create a zero image.cv2.fillPoly is used here to fill color.and cv2.bitwise_and is use here to add two images pixels by pixels.
+
 ![solidWhiteCurve_region_of_interest.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_region_of_interest.jpg "solidWhiteCurve_region_of_interest.jpg")
 
 5th, I use cv2.HoughLinesP to find the lines in the same line
