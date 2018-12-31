@@ -34,7 +34,9 @@ Step 2,  I smoothed the gray image with the function cv2.GaussianBlur to remove 
 
 ![solidWhiteCurve_edges.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_test_images_edges.jpg "solidWhiteCurve_edges.jpg")
 
-4th, I defined an area of interest to deal with, and to cut out the interst i don't care too much. The region I tested ok here is dined with 4 points: [[(150,edgesshape[0]),(460, 320), (490, 320), (920,edgesshape[0])]]。Tesd ok means the region either not contain too much ,nor cut off the information which is useful as the information of car lines. 
+4th, I defined an area of interest to deal with, and to cut out the interst i don't care too much. 
+The region I tested ok here is dined with 4 points: [[(150,the botom of the image),(460, 320), (490, 320), (920,the botom of the image)]]。
+"Tesd ok" means the region either not contain too much ,nor cut off the information which is useful as the information of car lines. 
 
 ![solidWhiteCurve_region_of_interest.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_region_of_interest.jpg "solidWhiteCurve_region_of_interest.jpg")
 
