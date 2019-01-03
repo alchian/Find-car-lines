@@ -56,7 +56,8 @@ The Minimum number of pixels making up a line here is 20.&Maximum gap in pixels 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
-    'for line in lines:'
+    ```
+    for line in lines:'
         for x1,y1,x2,y2 in line:
             s=(y2-y1)/(x2-x1)  #deine s as slopes of lines
             if s < 0: #judge the lines belong to left lane or right lane through s
@@ -75,7 +76,7 @@ In order to draw a single line on the left and right lanes, I modified the draw_
                     yminright=y1  
                     xminright=x1
                     xmaxright=int(xminright+(ymaxright-yminright)/slope_right)
-
+```
 
 ### 2. Identify potential shortcomings with your current pipeline
 
