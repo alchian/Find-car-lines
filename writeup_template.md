@@ -56,21 +56,17 @@ The Minimum number of pixels making up a line here is 20.&Maximum gap in pixels 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
-    for line in lines:
+    'for line in lines:'
         for x1,y1,x2,y2 in line:
-            #print(x1,y1,x2,y2)
-            s=(y2-y1)/(x2-x1)
-            #print(y2,y1,x2,x1)
-            #print(s)
-            if s < 0:
+            s=(y2-y1)/(x2-x1)  #deine s as slopes of lines
+            if s < 0: #judge the lines belong to left lane or right lane through s
                 lines_left[n_left]=line
-                slope_left = (slope_left*n_left + s)/(n_left+1)
+                slope_left = (slope_left*n_left + s)/(n_left+1) #cacualte the mean slope of the left lane
                 n_left=n_left+1
                 if y2< yminleft:
-                    yminleft=y2
-                    xmaxleft=x2
-                    xminleft=int(xmaxleft-(yminleft-ymaxleft)/slope_left)
-                #print(slope_left)
+                    yminleft=y2 #find the farthest point of the left lane
+                    xmaxleft=x2 
+                    xminleft=int(xmaxleft-(yminleft-ymaxleft)/slope_left) #cacualte the mean slope of the left lane
             else:
                 lines_right[n_right]=line
                 slope_right = (slope_right*n_right + s)/(n_right+1)
