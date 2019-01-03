@@ -77,6 +77,9 @@ In order to draw a single line on the left and right lanes, I modified the draw_
                     xminright=x1
                     xmaxright=int(xminright+(ymaxright-yminright)/slope_right)
 
+
+![solidWhiteCurve_drawline.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_drawline.jpg "solidWhiteCurve_drwline.jpg")
+
 ![solidWhiteCurve_single_line_image.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_single_line_image.jpg"solidWhiteCurve_single_line_image.jpg")
 
 ### 2. Identify potential shortcomings with your current pipeline
