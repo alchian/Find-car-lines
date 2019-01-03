@@ -83,9 +83,9 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be what would happen when the road is not so straight.
 
-Another shortcoming could be ...
+Another shortcoming could be  what would happen when there are cars in front of the test car.
 
 
 ### 3. Suggest possible improvements to your pipeline
