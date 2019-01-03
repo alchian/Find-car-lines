@@ -54,7 +54,7 @@ The Minimum number of pixels making up a line here is 20.&Maximum gap in pixels 
 
 ![solidWhiteCurve_drawline.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_drawline.jpg "solidWhiteCurve_drwline.jpg")
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by codes like this, and get the image.
 
     
     for line in lines:
