@@ -22,39 +22,39 @@ I will describe my work step by step with the image given as "solidWhiteCurve.jp
 
 ![solidWhiteCurve.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve.jpg "solidWhiteCurve.jpg")
 
-Step 1, I converted the images to grayscale with the function cv2.COLOR_RGB2GRAY;
+Step 1, I converted the images to grayscale with the function cv2.COLOR_RGB2GRAY();
 
 ![solidWhiteCurve_gray.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_test_images_grayt.jpg "solidWhiteCurve_gray.jpg")
 
-Step 2,  I smoothed the gray image with the function cv2.GaussianBlur to remove the noise point;
+Step 2,  I smoothed the gray image with the function cv2.GaussianBlur() to remove the noise point;
 
 ![solidWhiteCurve_smoothing.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_test_images_smoothing.jpg "solidWhiteCurve_smoothing.jpg")
 
-3rd, I find the edges of the smoothed gray image using function cv2.Canny;
+Step 3, I find the edges of the smoothed gray image using function cv2.Canny();
 
 ![solidWhiteCurve_edges.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_test_images_edges.jpg "solidWhiteCurve_edges.jpg")
 
-4th, I defined an area of interest to deal with, and to cut out the interst i don't care too much. 
+Step 4, I defined an area of interest to deal with, and to cut out the interst i don't care too much. 
 
 The region I tested ok here is dined with 4 points: [[(150,the botom of the image),(460, 320), (490, 320), (920,the botom of the image)]]
 
 "Tesd ok" means the region either not contain too much ,nor cut off the information which is useful as the information of car lines. 
 
-The function used here include np.zeros_like,  cv2.fillPoly, &cv2.bitwise_and. np.zeros_like is used here to create a zero image.cv2.fillPoly is used here to fill color.and cv2.bitwise_and is use here to add two images pixels by pixels.
+The function used here include np.zeros_like,  cv2.fillPoly, &cv2.bitwise_and. np.zeros_like() is used here to create a zero image.cv2.fillPoly() is used here to fill color.and cv2.bitwise_and() is use here to add two images pixels by pixels.
 
 ![solidWhiteCurve_region_of_interest.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_region_of_interest.jpg "solidWhiteCurve_region_of_interest.jpg")
 
-5th, I use cv2.HoughLinesP to find the lines in the same line. 
+Step 5, I use cv2.HoughLinesP() to find the lines in the same line. 
 
 The Minimum number of pixels making up a line here is 20.&Maximum gap in pixels between connectable line segments is 60. and draw the lines we find on the image ,we get the line image.
 
 ![solidWhiteCurve_line_image.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_line_image.jpg "solidWhiteCurve_line_image.jpg")
 
-6th, I add the line image to the intial iamge we deal with using funtion cv2.addWeight. I get the result as darw the line on the view image.
+Step 6, I add the line image to the intial iamge we deal with using funtion cv2.addWeight(). I get the result as darw the line on the view image.
 
 ![solidWhiteCurve_drawline.jpg](https://github.com/alchian/Find-car-lines/blob/test_images/solidWhiteCurve_drawline.jpg "solidWhiteCurve_drwline.jpg")
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by codes like this, and get the image.
+Step 7,In order to draw a single line on the left and right lanes, I modified the draw_lines() function by codes to find the farthest point of the each lane, and draw two lines on the image.
 
     
     for line in lines:
