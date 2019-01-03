@@ -90,6 +90,5 @@ Another shortcoming could be  what would happen when there are cars in front of 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to adjust the intest of region by speed of the car.
 
-Another potential improvement could be to ...
